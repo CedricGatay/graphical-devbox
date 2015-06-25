@@ -1,0 +1,12 @@
+
+- name: add cloudfront repository
+  apt_repository: repo='deb http://cloudfront.debian.net/debian unstable main' state=present update_cache=yes
+
+- name: upgrade system
+  apt: upgrade=dist update_cache=yes
+
+- name: install dependencies
+  apt: name={{ item }} state=present
+  with_items:
+    - openjdk-8-jdk
+ 
