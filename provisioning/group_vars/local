@@ -12,8 +12,8 @@ motd_header: |
  |_____/ \___| \_/ |_.__/ \___/_/\_\
 
 users:
-  - login: nicolas
-    github: ncarlier
-    email: hostmaster@nunux.org
-    dotfiles: "https://github.com/ncarlier/dotfiles.git"
+  - login: cgatay
+    github: CedricGatay
+    email: c.gatay@code-troopers.com
+    dotfiles: "https://github.com/CedricGatay/dotfiles.git"
 
