@@ -17,8 +17,9 @@
 - name: lightdm auto login
   lineinfile: dest=/etc/lightdm/lightdm.conf
     regexp='^#?autologin-user='
-    line='autologin-user=nicolas'
+    line='autologin-user={{ item.login }}'
     state=present
+  with_items: users
 
 - name: lightdm auto login
   lineinfile: dest=/etc/lightdm/lightdm.conf
